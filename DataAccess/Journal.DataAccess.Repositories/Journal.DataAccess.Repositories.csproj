@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mapping\**" />
+    <EmbeddedResource Remove="Mapping\**" />
+    <None Remove="Mapping\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entities\Journal.Entities\Journal.Entities.csproj" />
+    <ProjectReference Include="..\Journal.DataAccess.Interfaces\Journal.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Journal.DataAccess.Mapping\Journal.DataAccess.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

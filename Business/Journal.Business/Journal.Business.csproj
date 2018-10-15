@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\Journal.DataAccess.Interfaces\Journal.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Entities\Journal.Entities\Journal.Entities.csproj" />
+    <ProjectReference Include="..\Journal.Business.Interfaces\Journal.Business.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
